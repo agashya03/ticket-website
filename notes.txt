@@ -1,0 +1,7 @@
+Basic commands 
+
+pwd -> current location
+ls -> files listing
+ls -a -> listing with hidden files
+git status -> git repository or not 
+git init -> Git repository initialize
