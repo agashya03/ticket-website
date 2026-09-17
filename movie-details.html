@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Details - CineBook</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">Cine<span>Book</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="movie-details.html" class="active">Theaters</a>
+        <a href="booking.html">My Bookings</a>
+    </nav>
+
+    <button class="login-btn">Login</button>
+
+</header>
+
+
+<section class="movie-detail">
+
+    <div class="detail-poster">
+
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80">
+
+    </div>
+
+
+    <div class="detail-content">
+
+        <p class="section-label">NOW SHOWING</p>
+
+        <h1 id="selectedMovie">Midnight Chase</h1>
+
+        <div class="rating">
+            ⭐ 8.7 / 10
+        </div>
+
+        <p class="detail-description">
+
+            A thrilling action-packed journey through the city
+            where a mysterious chase unfolds after midnight.
+
+        </p>
+
+        <div class="movie-meta">
+
+            <div>
+                <strong>Duration</strong>
+                <span>2h 20min</span>
+            </div>
+
+            <div>
+                <strong>Genre</strong>
+                <span>Action, Thriller</span>
+            </div>
+
+            <div>
+                <strong>Language</strong>
+                <span>English</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div>
+            <p class="section-label">SELECT SHOW</p>
+            <h2>Choose Date & Time</h2>
+        </div>
+
+    </div>
+
+
+    <div class="date-selector">
+
+        <button class="date active">
+            <strong>17</strong>
+            <span>SEP</span>
+        </button>
+
+        <button class="date">
+            <strong>18</strong>
+            <span>SEP</span>
+        </button>
+
+        <button class="date">
+            <strong>19</strong>
+            <span>SEP</span>
+        </button>
+
+        <button class="date">
+            <strong>20</strong>
+            <span>SEP</span>
+        </button>
+
+    </div>
+
+
+    <div class="theater">
+
+        <div class="theater-header">
+
+            <div>
+                <h3>INOX Cinemas</h3>
+                <p>Chennai • Phoenix Mall</p>
+            </div>
+
+            <span class="price">From ₹180</span>
+
+        </div>
+
+
+        <div class="show-times">
+
+            <button onclick="selectShow('10:30 AM')">
+                10:30 AM
+            </button>
+
+            <button onclick="selectShow('1:30 PM')">
+                1:30 PM
+            </button>
+
+            <button onclick="selectShow('4:30 PM')">
+                4:30 PM
+            </button>
+
+            <button onclick="selectShow('7:30 PM')">
+                7:30 PM
+            </button>
+
+            <button onclick="selectShow('10:30 PM')">
+                10:30 PM
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="theater">
+
+        <div class="theater-header">
+
+            <div>
+                <h3>PVR Cinemas</h3>
+                <p>Chennai • VR Mall</p>
+            </div>
+
+            <span class="price">From ₹200</span>
+
+        </div>
+
+
+        <div class="show-times">
+
+            <button onclick="selectShow('11:00 AM')">
+                11:00 AM
+            </button>
+
+            <button onclick="selectShow('2:00 PM')">
+                2:00 PM
+            </button>
+
+            <button onclick="selectShow('5:00 PM')">
+                5:00 PM
+            </button>
+
+            <button onclick="selectShow('8:00 PM')">
+                8:00 PM
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="logo">Cine<span>Book</span></div>
+
+    <p>© 2026 CineBook. All rights reserved.</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

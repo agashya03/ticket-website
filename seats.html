@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Select Seats - CineBook</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">Cine<span>Book</span></div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="movie-details.html">Theaters</a>
+        <a href="booking.html">My Bookings</a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-banner">
+
+    <p class="section-label">SELECT YOUR SEATS</p>
+
+    <h1>Choose Your Seats</h1>
+
+    <p>
+        Select your preferred seats for the movie.
+    </p>
+
+</section>
+
+
+<section class="seat-section">
+
+
+    <div class="screen">
+
+        SCREEN
+
+    </div>
+
+
+    <div class="seat-layout">
+
+
+        <div class="seat-row">
+
+            <span>A</span>
+
+            <button class="seat">A1</button>
+            <button class="seat">A2</button>
+            <button class="seat booked">A3</button>
+            <button class="seat">A4</button>
+
+            <button class="seat">A5</button>
+            <button class="seat">A6</button>
+            <button class="seat">A7</button>
+            <button class="seat">A8</button>
+
+        </div>
+
+
+        <div class="seat-row">
+
+            <span>B</span>
+
+            <button class="seat">B1</button>
+            <button class="seat">B2</button>
+            <button class="seat">B3</button>
+            <button class="seat">B4</button>
+
+            <button class="seat booked">B5</button>
+            <button class="seat">B6</button>
+            <button class="seat">B7</button>
+            <button class="seat">B8</button>
+
+        </div>
+
+
+        <div class="seat-row">
+
+            <span>C</span>
+
+            <button class="seat">C1</button>
+            <button class="seat">C2</button>
+            <button class="seat">C3</button>
+            <button class="seat">C4</button>
+
+            <button class="seat">C5</button>
+            <button class="seat">C6</button>
+            <button class="seat booked">C7</button>
+            <button class="seat">C8</button>
+
+        </div>
+
+
+        <div class="seat-row">
+
+            <span>D</span>
+
+            <button class="seat">D1</button>
+            <button class="seat">D2</button>
+            <button class="seat">D3</button>
+            <button class="seat">D4</button>
+
+            <button class="seat">D5</button>
+            <button class="seat">D6</button>
+            <button class="seat">D7</button>
+            <button class="seat">D8</button>
+
+        </div>
+
+
+        <div class="seat-row">
+
+            <span>E</span>
+
+            <button class="seat">E1</button>
+            <button class="seat">E2</button>
+            <button class="seat">E3</button>
+            <button class="seat">E4</button>
+
+            <button class="seat">E5</button>
+            <button class="seat">E6</button>
+            <button class="seat">E7</button>
+            <button class="seat">E8</button>
+
+        </div>
+
+
+        <div class="seat-row">
+
+            <span>F</span>
+
+            <button class="seat">F1</button>
+            <button class="seat">F2</button>
+            <button class="seat">F3</button>
+            <button class="seat">F4</button>
+
+            <button class="seat">F5</button>
+            <button class="seat">F6</button>
+            <button class="seat">F7</button>
+            <button class="seat">F8</button>
+
+        </div>
+
+    </div>
+
+
+    <div class="seat-legend">
+
+        <div>
+            <span class="legend-box available"></span>
+            Available
+        </div>
+
+        <div>
+            <span class="legend-box selected"></span>
+            Selected
+        </div>
+
+        <div>
+            <span class="legend-box booked-box"></span>
+            Booked
+        </div>
+
+    </div>
+
+
+    <div class="booking-summary">
+
+        <div>
+
+            <p>Selected Seats</p>
+
+            <h3 id="selectedSeats">
+                None
+            </h3>
+
+        </div>
+
+
+        <div>
+
+            <p>Total Amount</p>
+
+            <h3>
+                ₹<span id="totalAmount">0</span>
+            </h3>
+
+        </div>
+
+
+        <button class="primary-btn"
+                onclick="goToPayment()">
+
+            Continue to Payment
+
+        </button>
+
+    </div>
+
+
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

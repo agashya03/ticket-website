@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Payment - CineBook</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">Cine<span>Book</span></div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="movie-details.html">Theaters</a>
+        <a href="booking.html">My Bookings</a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-banner">
+
+    <p class="section-label">
+        SECURE CHECKOUT
+    </p>
+
+    <h1>Payment</h1>
+
+    <p>
+        Complete your payment to confirm your tickets.
+    </p>
+
+</section>
+
+
+<section class="payment-container">
+
+
+    <div class="payment-form">
+
+        <h2>Payment Details</h2>
+
+
+        <label>
+            Cardholder Name
+        </label>
+
+        <input
+            type="text"
+            id="cardName"
+            placeholder="Enter your name"
+        >
+
+
+        <label>
+            Card Number
+        </label>
+
+        <input
+            type="text"
+            id="cardNumber"
+            placeholder="1234 5678 9012 3456"
+            maxlength="19"
+        >
+
+
+        <div class="payment-row">
+
+            <div>
+
+                <label>
+                    Expiry Date
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="MM/YY"
+                    maxlength="5"
+                >
+
+            </div>
+
+
+            <div>
+
+                <label>
+                    CVV
+                </label>
+
+                <input
+                    type="password"
+                    placeholder="•••"
+                    maxlength="3"
+                >
+
+            </div>
+
+        </div>
+
+
+        <button class="primary-btn payment-btn"
+                onclick="completePayment()">
+
+            Pay ₹<span id="paymentAmount">0</span>
+
+        </button>
+
+
+        <p class="secure-text">
+            🔒 Your payment information is secure.
+        </p>
+
+    </div>
+
+
+    <div class="order-summary">
+
+        <h2>Booking Summary</h2>
+
+
+        <div class="summary-item">
+
+            <span>Movie</span>
+
+            <strong id="summaryMovie">
+                Midnight Chase
+            </strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>Theater</span>
+
+            <strong>INOX Cinemas</strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>Show Time</span>
+
+            <strong id="summaryTime">
+                7:30 PM
+            </strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>Seats</span>
+
+            <strong id="summarySeats">
+                A1, A2
+            </strong>
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="total-row">
+
+            <span>Total</span>
+
+            <strong>
+                ₹<span id="summaryTotal">0</span>
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="logo">
+        Cine<span>Book</span>
+    </div>
+
+    <p>
+        © 2026 CineBook. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Payment - CineBook</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">Cine<span>Book</span></div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="movie-details.html">Theaters</a>
+        <a href="booking.html">My Bookings</a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-banner">
+
+    <p class="section-label">
+        SECURE CHECKOUT
+    </p>
+
+    <h1>Payment</h1>
+
+    <p>
+        Complete your payment to confirm your tickets.
+    </p>
+
+</section>
+
+
+<section class="payment-container">
+
+
+    <div class="payment-form">
+
+        <h2>Payment Details</h2>
+
+
+        <label>
+            Cardholder Name
+        </label>
+
+        <input
+            type="text"
+            id="cardName"
+            placeholder="Enter your name"
+        >
+
+
+        <label>
+            Card Number
+        </label>
+
+        <input
+            type="text"
+            id="cardNumber"
+            placeholder="1234 5678 9012 3456"
+            maxlength="19"
+        >
+
+
+        <div class="payment-row">
+
+            <div>
+
+                <label>
+                    Expiry Date
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="MM/YY"
+                    maxlength="5"
+                >
+
+            </div>
+
+
+            <div>
+
+                <label>
+                    CVV
+                </label>
+
+                <input
+                    type="password"
+                    placeholder="•••"
+                    maxlength="3"
+                >
+
+            </div>
+
+        </div>
+
+
+        <button class="primary-btn payment-btn"
+                onclick="completePayment()">
+
+            Pay ₹<span id="paymentAmount">0</span>
+
+        </button>
+
+
+        <p class="secure-text">
+            🔒 Your payment information is secure.
+        </p>
+
+    </div>
+
+
+    <div class="order-summary">
+
+        <h2>Booking Summary</h2>
+
+
+        <div class="summary-item">
+
+            <span>Movie</span>
+
+            <strong id="summaryMovie">
+                Midnight Chase
+            </strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>Theater</span>
+
+            <strong>INOX Cinemas</strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>Show Time</span>
+
+            <strong id="summaryTime">
+                7:30 PM
+            </strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>Seats</span>
+
+            <strong id="summarySeats">
+                A1, A2
+            </strong>
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="total-row">
+
+            <span>Total</span>
+
+            <strong>
+                ₹<span id="summaryTotal">0</span>
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="logo">
+        Cine<span>Book</span>
+    </div>
+
+    <p>
+        © 2026 CineBook. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
